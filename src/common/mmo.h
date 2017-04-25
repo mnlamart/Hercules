@@ -63,11 +63,11 @@
 // 20120307 - 2012-03-07aRagexeRE+ - 0x970
 
 #ifndef PACKETVER
-	#define PACKETVER 20141022
+	#define PACKETVER 20151029
 #endif // PACKETVER
 
 //Uncomment the following line if your client is ragexeRE instead of ragexe (required because of conflicting packets in ragexe vs ragexeRE).
-//#define ENABLE_PACKETVER_RE
+#define ENABLE_PACKETVER_RE
 #ifdef ENABLE_PACKETVER_RE
 	#define PACKETVER_RE
 	#undef ENABLE_PACKETVER_RE
@@ -84,7 +84,7 @@
 #if PACKETVER >= 20070227
 // Comment the following like to disable server-side hot-key saving support. [Skotlex]
 // Note that newer clients no longer save hotkeys in the registry!
-#define HOTKEY_SAVING
+//#define HOTKEY_SAVING
 
 #if PACKETVER < 20090603
 	// (27 = 9 skills x 3 bars)               (0x02b9,191)
@@ -134,7 +134,7 @@
 #define MAX_BANK_ZENY INT_MAX
 
 #ifndef MAX_LEVEL
-#define MAX_LEVEL 175
+#define MAX_LEVEL 250
 #endif
 #define MAX_FAME 1000000000
 #define MAX_CART 100
@@ -185,7 +185,7 @@
 #define MAX_GUILDSKILL 15                // Increased max guild skills because of new skills [Sara-chan]
 #endif
 #ifndef MAX_GUILDLEVEL
-#define MAX_GUILDLEVEL 50
+#define MAX_GUILDLEVEL 200
 #endif
 #ifndef MAX_GUARDIANS
 #define MAX_GUARDIANS 8                  // Local max per castle. [Skotlex]
